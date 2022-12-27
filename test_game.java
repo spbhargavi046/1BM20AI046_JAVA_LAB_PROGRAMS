@@ -21,7 +21,12 @@ void randomMove() {
 void display()
 { 
  randomMove();
- if(m==move.rock)
+ if(m==c)
+ {
+   System.out.println("Tie");
+   System.out.println("Your move:"+m+" computer move:"+c);
+  }
+ else if(m==move.rock)
  {
   if(c==move.scissor)
   {
